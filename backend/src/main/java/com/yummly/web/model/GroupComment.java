@@ -17,7 +17,7 @@ public class GroupComment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(nullable = false, length = 10000)
     private String content;
     
     @Column(name = "created_at")

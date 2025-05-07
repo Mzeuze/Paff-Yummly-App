@@ -1,6 +1,4 @@
 package com.yummly.web.service;
-
-import com.yummly.web.exception.FileStorageException;
 import com.yummly.web.model.Post;
 import com.yummly.web.model.User;
 import com.yummly.web.repo.PostRepository;
@@ -30,7 +28,7 @@ public class PostService {
     @Autowired
     private UserRepo userRepo;
 
-    @Value("${file.upload.dir}")
+    @Value("${file.upload-dir}")
     private String uploadDir;
 
     public Post createPost(String title, String description, Long userId, MultipartFile image, MultipartFile video) {

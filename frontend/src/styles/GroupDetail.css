@@ -1,0 +1,314 @@
+.group-detail-container {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #8e24aa;
+  color: #fff;
+  position: relative;
+}
+
+.group-header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.group-header-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.group-header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group-header-image .no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.group-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cuisine-type {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.group-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.join-btn, .leave-btn, .edit-btn, .transfer-btn, .delete-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.join-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.join-btn:hover {
+  background-color: #43a047;
+}
+
+.leave-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.leave-btn:hover {
+  background-color: #f57c00;
+}
+
+.edit-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #1976D2;
+}
+
+.transfer-btn {
+  background-color: #9C27B0;
+  color: white;
+}
+
+.transfer-btn:hover {
+  background-color: #7B1FA2;
+}
+
+.delete-btn {
+  background-color: #F44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #D32F2F;
+}
+
+.group-tabs {
+  display: flex;
+  background-color: white;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.group-tab {
+  padding: 12px 25px;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.group-tab:hover {
+  color: #8e24aa;
+}
+
+.group-tab.active {
+  color: #8e24aa;
+}
+
+.group-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #8e24aa;
+}
+
+.group-description, .group-members {
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.group-description h3, .group-members h3 {
+  color: #333;
+  margin-top: 0;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.group-description h3::after, .group-members h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #8e24aa;
+}
+
+.group-description p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.members-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.member-item:hover {
+  background-color: #f0f0f0;
+}
+
+.member-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.admin-badge, .moderator-badge {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.admin-badge {
+  background-color: #8e24aa;
+  color: white;
+}
+
+.moderator-badge {
+  background-color: #ff9800;
+  color: white;
+}
+
+.member-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.remove-member-btn, .toggle-mod-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.remove-member-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.remove-member-btn:hover {
+  background-color: #d32f2f;
+}
+
+.toggle-mod-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.toggle-mod-btn:hover {
+  background-color: #f57c00;
+}
+
+.loading, .error-message {
+  padding: 2rem;
+  text-align: center;
+  color: #555;
+}
+
+.error-message {
+  color: #f44336;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .group-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .group-actions {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .admin-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .group-tab {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+} 

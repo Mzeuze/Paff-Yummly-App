@@ -83,6 +83,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>3.2.0</version>
 				<configuration>
+					<mainClass>com.yummly.web.WebApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
