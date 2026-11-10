@@ -21,3 +21,9 @@ Yummly is an innovative social media platform designed exclusively for food love
 ✔ Restaurant Reviews – Share dining experiences and recommendations.
 
 ✔ Save & Bookmark – Collect your favorite recipes for future use.
+
+## My contribution
+
+I helped set up the GitHub repository for our team project. I added the shared codebase and organized it into separate directories for the React frontend (`frontend/`) and the Java 17 / Spring Boot backend (`backend/`).
+
+[View my repository setup commit](https://github.com/Mzeuze/Paff-Yummly-App/commit/1c5649542cc5cb34c657bcaf0f520d1769988dc9).
